@@ -1,1 +1,3 @@
-# Setup
+## dotfiles
+
+My dotfiles for macOS.
