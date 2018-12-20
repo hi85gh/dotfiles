@@ -1,0 +1,23 @@
+[user]
+	name = hi85
+	email = 33993836+hi85gh@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+	a = add
+	b = branch
+	c = commit
+	ch = checkout
+	cp = cherry-pick
+	d = diff
+	l = log
+	r = remote
+	ru = remote update
+	s = status
+	sp = stash pop
+	ss = stash save
