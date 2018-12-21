@@ -2,6 +2,34 @@
 
 set -eu
 
+# Install nvm: https://github.com/creationix/nvm#git-install
+NVM_DIR=$HOME/.nvm
+
+if [ ! -d "$NVM_DIR" ]; then
+    (
+        git clone https://github.com/creationix/nvm.git "$NVM_DIR"
+        cd "$NVM_DIR"
+        git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+    ) && \. "$NVM_DIR/nvm.sh"
+    echo
+else
+    echo "$NVM_DIR already downloaded. Updating..." && (
+        cd "$NVM_DIR"
+        git fetch --tags origin
+        git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+    ) && \. "$NVM_DIR/nvm.sh"
+    echo
+fi
+
+# Install Node.js
+if type nvm > /dev/null 2>&1; then
+    nvm install node  # Current
+    nvm install --lts # LTS
+    nvm alias default lts/*
+    echo
+fi
+
+# Download dotfiles
 DOTPATH=$HOME/dotfiles
 
 if [ ! -d "$DOTPATH" ]; then
