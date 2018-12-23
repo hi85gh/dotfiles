@@ -15,9 +15,13 @@
 	ch = checkout
 	cp = cherry-pick
 	d = diff
-	l = log
+	l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
+	la = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --all --graph
+	lf = log --pretty=full --all --graph --name-status --numstat
+	ll = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --name-status
+	ls = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --numstat
 	r = remote
-	ru = remote update
+	ru = remote update --prune
 	s = status
 	sp = stash pop
 	ss = stash save
