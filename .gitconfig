@@ -11,8 +11,9 @@
 [alias]
 	a = add
 	b = branch
+	ba = branch --all
 	c = commit
-	ch = checkout
+	co = checkout
 	cp = cherry-pick
 	d = diff
 	l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
