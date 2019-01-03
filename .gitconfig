@@ -13,6 +13,7 @@
 	b = branch
 	ba = branch --all
 	c = commit
+	cm = commit --message
 	co = checkout
 	cp = cherry-pick
 	d = diff
@@ -26,3 +27,10 @@
 	s = status
 	sp = stash pop
 	ss = stash save
+	z = "!f () {\
+		if [ \"$2\" = \"\" ]; then \
+			git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip; \
+		else \
+			git archive --format=zip --prefix=archive/ $1 `git diff --diff-filter=d --name-only $2 $1` -o archive.zip; \
+		fi; \
+	};f"
