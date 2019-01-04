@@ -17,7 +17,7 @@ brew "tree"
 brew "yarn", args: ["without-node"]
 
 # Applications
-cask "appcleaner"
+# cask "appcleaner"
 # cask "blender"
 cask "clipy"
 cask "docker"
