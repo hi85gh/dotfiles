@@ -28,9 +28,9 @@ alias dvl="docker volume ls"
 # Git
 function git_zip() {
   if [ "$2" = "" ]; then
-      git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip
+    git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip
   else
-      git archive --format=zip --prefix=archive/ $1 `git diff --diff-filter=d --name-only $2 $1` -o archive.zip
+    git archive --format=zip --prefix=archive/ $1 `git diff --diff-filter=d --name-only $2 $1` -o archive.zip
   fi
 }
 

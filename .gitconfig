@@ -1,36 +1,36 @@
 [user]
-	name = hi85
-	email = 33993836+hi85gh@users.noreply.github.com
+  name = hi85
+  email = 33993836+hi85gh@users.noreply.github.com
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [alias]
-	a = add
-	b = branch
-	ba = branch --all
-	c = commit
-	cm = commit --message
-	co = checkout
-	cp = cherry-pick
-	d = diff
-	l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
-	la = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --all --graph
-	lf = log --pretty=full --all --graph --name-status --numstat
-	ll = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --name-status
-	ls = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --numstat
-	r = remote
-	ru = remote update --prune
-	s = status
-	sp = stash pop
-	ss = stash save
-	z = "!f () {\
-		if [ \"$2\" = \"\" ]; then \
-			git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip; \
-		else \
-			git archive --format=zip --prefix=archive/ $1 `git diff --diff-filter=d --name-only $2 $1` -o archive.zip; \
-		fi; \
-	};f"
+  a = add
+  b = branch
+  ba = branch --all
+  c = commit
+  cm = commit --message
+  co = checkout
+  cp = cherry-pick
+  d = diff
+  l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
+  la = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --all --graph
+  lf = log --pretty=full --all --graph --name-status --numstat
+  ll = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --name-status
+  ls = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --numstat
+  r = remote
+  ru = remote update --prune
+  s = status
+  sp = stash pop
+  ss = stash save
+  z = "!f () {\
+    if [ \"$2\" = \"\" ]; then \
+      git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip; \
+    else \
+      git archive --format=zip --prefix=archive/ $1 `git diff --diff-filter=d --name-only $2 $1` -o archive.zip; \
+    fi; \
+  };f"
