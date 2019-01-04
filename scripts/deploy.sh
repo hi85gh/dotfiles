@@ -14,3 +14,5 @@ for file in .??*; do
   [[ "$file" = ".DS_Store" ]] && continue
   ln -fhvs "$DOTPATH/$file" "$HOME/$file"
 done
+
+ln -fhvs "$DOTPATH/docker-compose.yml" "$HOME/docker-compose.yml"
