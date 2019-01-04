@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eu
+# set -eu
 
 # Install nvm: https://github.com/creationix/nvm#git-install
 NVM_DIR=$HOME/.nvm
