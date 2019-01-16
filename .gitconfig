@@ -17,6 +17,8 @@
   co = checkout
   cp = cherry-pick
   d = diff
+  dn = diff --name-only
+  ds = diff --compact-summary
   l = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso
   la = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --all --graph
   lf = log --pretty=full --all --graph --name-status --numstat
@@ -27,6 +29,8 @@
   s = status
   sp = stash pop
   ss = stash save
+  t = tag
+  tl = tag --list
   z = "!f () {\
     if [ \"$2\" = \"\" ]; then \
       git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip; \
