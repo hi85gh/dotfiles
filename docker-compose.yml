@@ -20,3 +20,12 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: root
+
+  # https://hub.docker.com/_/node
+  node:
+    image: node:lts-alpine
+    tty: true
+    ports:
+      - 3000:3000
+    command: sh
+
