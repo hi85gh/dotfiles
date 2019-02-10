@@ -5,6 +5,7 @@ alias ll="ls -l"
 # Docker aliases
 alias d="docker"
 alias dc="docker-compose"
+alias dcb="docker-compose build"
 alias dcc="docker-compose config"
 alias dcd="docker-compose down --volumes"
 alias dce="docker-compose exec"
