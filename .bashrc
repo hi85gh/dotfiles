@@ -26,6 +26,9 @@ alias dst="docker start"
 alias dv="docker volume"
 alias dvl="docker volume ls"
 
+# Sublime Merge alias
+alias smerge="\"/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge\""
+
 # Git
 function git_zip() {
   if [ "$2" = "" ]; then
