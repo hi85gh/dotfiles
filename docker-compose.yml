@@ -24,3 +24,22 @@ services:
     container_name: tmp_mongo_express
     ports:
       - 8081:8081
+
+  ##
+  # Database: MySQL
+  ##
+  mysql:
+    image: mysql # https://hub.docker.com/_/mysql
+    container_name: tmp_mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer # https://hub.docker.com/_/adminer
+    container_name: tmp_adminer
+    ports:
+      - 8888:8080
+    links:
+      - mysql:db
