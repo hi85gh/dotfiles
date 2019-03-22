@@ -17,7 +17,7 @@ brew "imagemagick"
 brew "jq"
 # brew "mas"
 brew "tree"
-brew "yarn", args: ["without-node"]
+brew "yarn", args: ["ignore-dependencies"]
 
 ##
 # Casks
