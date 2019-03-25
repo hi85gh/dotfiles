@@ -16,6 +16,7 @@
   ba = branch --all
   c = commit
   cm = commit --message
+  cme = commit --message '' --allow-empty-message
   co = checkout
   cp = cherry-pick
   d = diff
