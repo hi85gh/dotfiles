@@ -6,24 +6,20 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 
-##
-# Formulae
-##
+### Formulae
 brew "circleci"
-# brew "ffmpeg"
+brew "ffmpeg"
 brew "gibo"
 brew "git"
 brew "imagemagick"
 brew "jq"
 # brew "mas"
 brew "tree"
-brew "yarn", args: ["ignore-dependencies"]
+brew "yarn"
 
-##
-# Casks
-##
-# cask "appcleaner"
-# cask "blender"
+### Casks
+cask "appcleaner"
+cask "blender"
 cask "clipy"
 cask "docker"
 cask "firefox-developer-edition"
@@ -32,21 +28,17 @@ cask "google-chrome"
 cask "karabiner-elements"
 cask "kindle"
 cask "qlcolorcode"
-# cask "qlimagesize"
+cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
 cask "shiftit"
-cask "slack"
 cask "sublime-merge"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "webpquicklook"
 
-##
-# Mac Apps
-##
-# mas "Battery Monitor", id: 836505650
+### Mac Apps
 # mas "Numbers", id: 409203825
 # mas "Xcode", id: 497799835
