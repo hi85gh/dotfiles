@@ -10,10 +10,12 @@
   excludesfile = ~/.gitignore
 [alias]
   a = add
-  ap = add --patch
   an = add --intent-to-add
+  ap = add --patch
   b = branch
   ba = branch --all
+  bd = branch --delete
+  bsc = branch --show-current
   c = commit
   cm = commit --message
   cme = commit --message '' --allow-empty-message
@@ -28,6 +30,7 @@
   ll = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --name-status
   ls = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --numstat
   r = remote
+  ref = reflog --date=local
   ru = remote update --prune
   s = status
   sp = stash pop
