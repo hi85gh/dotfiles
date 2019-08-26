@@ -31,6 +31,9 @@ alias dv="docker volume"
 alias dvl="docker volume ls"
 
 # Git
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
 function git_zip() {
   if [ "$2" = "" ]; then
     git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip
