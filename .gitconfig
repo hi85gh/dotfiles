@@ -39,6 +39,7 @@
   sp = stash pop
   ss = stash save
   sw = switch
+  swc = switch --create
   t = tag
   tl = tag --list
   z = "!f () {\
