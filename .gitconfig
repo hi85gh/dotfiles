@@ -1,21 +1,22 @@
 [user]
   name = hi85
   email = 33993836+hi85gh@users.noreply.github.com
+
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+
 [core]
   excludesfile = ~/.gitignore
+
 [alias]
   a = add
   an = add --intent-to-add
   ap = add --patch
-  b = branch
+  b = branch --verbose --verbose
   ba = branch --all
-  bd = branch --delete
-  bsc = branch --show-current
   c = commit
   cm = commit --message
   cme = commit --message '' --allow-empty-message
@@ -30,11 +31,14 @@
   ll = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --name-status
   ls = log --pretty='format:%C(yellow)%h %C(green)%cd %C(reset)%s %C(red)%d %C(cyan)[%an]' --date=iso --numstat
   r = remote
+  rb = reset --soft HEAD^
+  rbh = reset --hard HEAD^
   ref = reflog --date=local
   ru = remote update --prune
   s = status
   sp = stash pop
   ss = stash save
+  sw = switch
   t = tag
   tl = tag --list
   z = "!f () {\
