@@ -1,11 +1,10 @@
 {
-  "printWidth": 100,
   "endOfLine": "lf",
   "singleQuote": true,
   "tabWidth": 2,
   "overrides": [
     {
-      "files": ["*.css", "*.scss", "*.yml", "*.md"],
+      "files": ["*.css", "*.scss", "*.yaml", "*.yml", "*.md"],
       "options": {
         "singleQuote": false
       }
