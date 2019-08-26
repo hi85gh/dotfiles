@@ -1,8 +1,12 @@
-# Bash aliases
+# Bash
 alias la="ls -la"
 alias ll="ls -l"
 
-# Docker aliases
+# CircleCI
+alias ci="circleci"
+alias cicv="circleci config validate"
+
+# Docker
 alias d="docker"
 alias dc="docker-compose"
 alias dcb="docker-compose build"
@@ -26,9 +30,6 @@ alias dst="docker start"
 alias dv="docker volume"
 alias dvl="docker volume ls"
 
-# Sublime Merge alias
-alias smerge="\"/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge\""
-
 # Git
 function git_zip() {
   if [ "$2" = "" ]; then
@@ -41,3 +42,6 @@ function git_zip() {
 # nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Sublime Merge
+alias smerge="\"/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge\""
