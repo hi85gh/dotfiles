@@ -6,7 +6,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 
-### Formulae
+# Formulae
 brew "circleci"
 brew "ffmpeg"
 brew "gibo"
@@ -17,7 +17,7 @@ brew "jq"
 brew "tree"
 brew "yarn"
 
-### Casks
+# Casks
 cask "appcleaner"
 cask "blender"
 cask "clipy"
@@ -25,6 +25,7 @@ cask "docker"
 cask "firefox-developer-edition"
 cask "font-noto-sans-cjk-jp"
 cask "google-chrome"
+cask "google-chrome-canary"
 cask "karabiner-elements"
 cask "kindle"
 cask "qlcolorcode"
@@ -39,6 +40,6 @@ cask "virtualbox"
 cask "visual-studio-code"
 cask "webpquicklook"
 
-### Mac Apps
+# Mac Apps
 # mas "Numbers", id: 409203825
 # mas "Xcode", id: 497799835
