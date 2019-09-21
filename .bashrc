@@ -8,16 +8,7 @@ alias cicv="circleci config validate"
 
 # Docker
 alias d="docker"
-alias dc="docker-compose"
-alias dcb="docker-compose build"
-alias dcc="docker-compose config"
-alias dcd="docker-compose down --volumes"
-alias dce="docker-compose exec"
-alias dcl="docker-compose ps"
-alias dcr="docker-compose run"
-alias dcsp="docker-compose stop"
-alias dcst="docker-compose start"
-alias dcu="docker-compose up --detach"
+alias dcp="docker cp"
 alias de="docker exec"
 alias di="docker image"
 alias dil="docker images"
@@ -29,6 +20,19 @@ alias dsp="docker stop"
 alias dst="docker start"
 alias dv="docker volume"
 alias dvl="docker volume ls"
+
+# Docker Compose
+alias dc="docker-compose"
+alias dcb="docker-compose build"
+alias dcc="docker-compose config"
+alias dcd="docker-compose down"
+alias dcdv="docker-compose down --volumes"
+alias dce="docker-compose exec"
+alias dcl="docker-compose ps"
+alias dcr="docker-compose run"
+alias dcsp="docker-compose stop"
+alias dcst="docker-compose start"
+alias dcu="docker-compose up --detach"
 
 # Git
 source /usr/local/etc/bash_completion.d/git-prompt.sh
