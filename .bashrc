@@ -54,4 +54,5 @@ alias ncu="npx npm-check-updates"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Sublime Merge
+alias sme="\"/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge\" ."
 alias smerge="\"/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge\""
