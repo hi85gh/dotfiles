@@ -2,6 +2,16 @@
 
 set -u
 
+# Install Homebrew: https://brew.sh/
+if ! command -v brew > /dev/null 2>&1; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo
+else
+  echo "Homebrew already installed. Updating..."
+  brew update
+  echo
+fi
+
 # Install nvm: https://github.com/creationix/nvm#git-install
 NVM_DIR=$HOME/.nvm
 
@@ -48,16 +58,6 @@ cd "$DOTPATH"
 # deploy dotfiles
 scripts/deploy.sh
 echo
-
-# Install Homebrew: https://brew.sh/
-if ! command -v brew > /dev/null 2>&1; then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  echo
-else
-  echo "Homebrew already installed. Updating..."
-  brew update
-  echo
-fi
 
 # Install formulae and macOS applications
 brew bundle --global
