@@ -75,5 +75,4 @@ $RECYCLE.BIN/
 
 ### Miscellaneous
 
-# Private excludes
-.gitexclude
+.gitconfig.local
