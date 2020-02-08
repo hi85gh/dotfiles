@@ -26,13 +26,15 @@ alias dc="docker-compose"
 alias dcb="docker-compose build"
 alias dcc="docker-compose config"
 alias dcd="docker-compose down"
+alias dcda="docker-compose down --rmi all --volumes"
 alias dcdv="docker-compose down --volumes"
 alias dce="docker-compose exec"
 alias dcl="docker-compose ps"
 alias dcr="docker-compose run"
 alias dcsp="docker-compose stop"
 alias dcst="docker-compose start"
-alias dcu="docker-compose up --detach"
+alias dcu="docker-compose up"
+alias dcud="docker-compose up --detach"
 
 # Git
 source /usr/local/etc/bash_completion.d/git-prompt.sh
