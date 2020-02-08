@@ -49,3 +49,6 @@
       git archive --format=zip --prefix=archive/ $1 `git diff --diff-filter=d --name-only $2 $1` -o archive.zip; \
     fi; \
   };f"
+
+[include]
+  path = ~/.gitconfig.local

@@ -71,8 +71,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-
-### Miscellaneous
-
-.gitconfig.local
