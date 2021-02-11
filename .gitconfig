@@ -50,5 +50,6 @@
     fi; \
   };f"
 
+# Include must be the last.
 [include]
   path = ~/.gitconfig.local
