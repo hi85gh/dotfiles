@@ -11,6 +11,9 @@
 [core]
   excludesfile = ~/.gitignore
 
+[init]
+  defaultBranch = main
+
 [alias]
   a = add
   an = add --intent-to-add
