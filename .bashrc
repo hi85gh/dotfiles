@@ -40,7 +40,7 @@ alias dcud="docker-compose up --detach"
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
-function git_zip() {
+function git-zip() {
   if [ "$2" = "" ]; then
     git archive --format=zip --prefix=archive/ HEAD `git diff --diff-filter=d --name-only $1 HEAD` -o archive.zip
   else
@@ -54,6 +54,12 @@ alias ncu="npx npm-check-updates"
 # nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+function nvm-upgrade() (
+  cd "$NVM_DIR"
+  git fetch --tags origin
+  git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+) && \. "$NVM_DIR/nvm.sh"
 
 # Sublime Merge
 alias sme="\"/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge\" ."
