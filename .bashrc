@@ -1,10 +1,10 @@
 # Bash
+alias c='clear'
+alias l1="ls -1"
 alias la="ls -la"
 alias ll="ls -l"
-
-# CircleCI
-alias ci="circleci"
-alias cicv="circleci config validate"
+alias ls="ls -G"
+alias o='open .'
 
 # Docker
 alias d="docker"
@@ -49,7 +49,14 @@ function git-zip() {
 }
 
 # npm
-alias ncu="npx npm-check-updates"
+source /usr/local/etc/bash_completion.d/npm
+
+alias ncu-install="npm install --global npm-check-updates"
+alias ncu-i="ncu-install"
+alias ncu-uninstall="npm uninstall --global npm-check-updates"
+alias ncu-un="ncu-uninstall"
+alias ncu-update="ncu-install"
+alias ncu-up="ncu-install"
 
 # nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
