@@ -1,6 +1,5 @@
 /**
- * Options · Prettier
- * https://prettier.io/docs/en/options.html
+ * @See {@link https://prettier.io/docs/en/options.html Options · Prettier}
  * @type {import('prettier').Options}
  */
 module.exports = {
@@ -12,8 +11,8 @@ module.exports = {
     {
       files: ['*.css', '*.scss', '*.yaml', '*.yml', '*.md'],
       options: {
-        singleQuote: false
-      }
-    }
-  ]
+        singleQuote: false,
+      },
+    },
+  ],
 };
