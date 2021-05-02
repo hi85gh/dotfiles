@@ -1,5 +1,3 @@
-cask_args appdir: "/Applications"
-
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -8,24 +6,16 @@ tap "homebrew/core"
 
 # Formulae
 brew "ffmpeg"
-brew "gibo"
 brew "git"
-brew "imagemagick"
-brew "jq"
-# brew "mas"
 brew "tree"
-brew "webp"
-brew "yarn"
 brew "youtube-dl"
 
 # Casks
-cask "android-file-transfer"
 cask "appcleaner"
 cask "blender"
 cask "clipy"
 cask "docker"
 cask "firefox"
-cask "firefox-developer-edition"
 cask "font-noto-sans-cjk-jp"
 cask "google-chrome"
 cask "google-chrome-canary"
@@ -33,18 +23,10 @@ cask "iina"
 cask "karabiner-elements"
 cask "kindle"
 cask "qlcolorcode"
-cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlstephen"
-cask "quicklook-csv"
 cask "quicklook-json"
-cask "shiftit"
-cask "slack"
+cask "rectangle"
 cask "sublime-merge"
-cask "virtualbox"
 cask "visual-studio-code"
 cask "webpquicklook"
-
-# Mac Apps
-# mas "Numbers", id: 409203825
-# mas "Xcode", id: 497799835
